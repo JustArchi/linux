@@ -3,8 +3,8 @@ all:
 all: ring virtio_ring_0_9 virtio_ring_poll
 
 CFLAGS += -Wall
-CFLAGS += -pthread -O2 -ggdb
-LDFLAGS += -pthread -O2 -ggdb
+CFLAGS += -pthread -O3 -ggdb
+LDFLAGS += -pthread -O3 -ggdb
 
 main.o: main.c main.h
 ring.o: ring.c main.h

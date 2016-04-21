@@ -59,7 +59,7 @@ TARGETS=$(SLIBJVMTI)
 SRCS=libjvmti.c jvmti_agent.c
 OBJS=$(SRCS:.c=.o)
 SOBJS=$(OBJS:.o=.lo)
-OPT=-O2 -g -Werror -Wall
+OPT=-O3 -g -Werror -Wall
 
 CFLAGS=$(INCDIR) $(OPT)
 

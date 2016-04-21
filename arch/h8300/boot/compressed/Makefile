@@ -40,4 +40,4 @@ OBJCOPYFLAGS := -O binary
 $(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/vmlinux.bin.$(suffix-y) FORCE
 	$(call if_changed,ld)
 
-CFLAGS_misc.o = -O0
+CFLAGS_misc.o = -O3

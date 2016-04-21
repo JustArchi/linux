@@ -1,6 +1,6 @@
 TEST_PROGS := gettimeofday context_switch
 
-CFLAGS += -O2
+CFLAGS += -O3
 
 all: $(TEST_PROGS)
 

@@ -2,7 +2,7 @@ VERSION = 1.0
 
 BINDIR=usr/bin
 WARNFLAGS=-Wall -Wshadow -W -Wformat -Wimplicit-function-declaration -Wimplicit-int
-CFLAGS+= -O1 ${WARNFLAGS} -fstack-protector
+CFLAGS+= -O3 ${WARNFLAGS} -fstack-protector
 CC=$(CROSS_COMPILE)gcc
 
 CFLAGS+=-D VERSION=\"$(VERSION)\"

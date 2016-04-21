@@ -82,4 +82,4 @@ HOSTLOADLIBES_map_perf_test += -lelf -lrt
 $(obj)/%.o: $(src)/%.c
 	clang $(NOSTDINC_FLAGS) $(LINUXINCLUDE) $(EXTRA_CFLAGS) \
 		-D__KERNEL__ -D__ASM_SYSREG_H -Wno-unused-value -Wno-pointer-sign \
-		-O2 -emit-llvm -c $< -o -| llc -march=bpf -filetype=obj -o $@
+		-O3 -emit-llvm -c $< -o -| llc -march=bpf -filetype=obj -o $@
